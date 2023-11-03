@@ -1,3 +1,50 @@
+* {
+  border: 1px solid brown;
+}
 body {
   background: peachpuff;
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.a, .h {
+  flex-grow: 1;
+}
+
+.bcdefg {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+/* .b {
+  width: 100%;
+} */
+
+.b, .c, .d, .e, .f, .g {
+  flex-grow: 1;
+/*   height: 50%; */
+  width: 33.33%;
+/*   flex-direction: row; */
+  
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .a {
+    width: 100vw;
+  }
 }

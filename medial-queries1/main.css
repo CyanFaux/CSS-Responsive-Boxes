@@ -1,3 +1,45 @@
+* {
+  border: 1px solid brown;
+}
 body {
   background: blanchedalmond;
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.a {
+  background-color: tan;
+  flex-grow: 1;
+  margin: 1em;
+}
+
+.b {
+  background-color: tan;
+  flex-grow: 5;
+  margin: 1em;
+}
+
+.c {
+  background-color: tan;
+  flex-grow: 1;
+  margin: 1em;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .a {
+    width: 100vw;
+  }
 }
